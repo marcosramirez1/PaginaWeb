@@ -72,3 +72,13 @@ article {
     }
     
 }
+
+.logo {
+    max-width: 40%;
+    max-height: 40%;
+}
+
+.banner {
+    max-height: 150%;
+    max-width: 100%;
+}
