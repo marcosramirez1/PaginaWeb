@@ -82,3 +82,57 @@ article {
     max-height: 150%;
     max-width: 100%;
 }
+
+h1 
+{
+    font-size: 1,5em;
+    margin-top: 0,5em;
+}
+.subtitle {
+    background-color: rgb(10, 119, 83);
+    font-size: 0,9em;
+    padding: 1px;
+    border: solid 0,2em black;
+    margin-top: 0,9em;
+}
+
+/*catalogo */
+.element {
+ width: 250px;
+ padding: 10px;
+ margin: 10px;
+ background-color: darkgreen;
+ border: solid 1px ;
+
+}
+.imagen-sabanas {
+    max-width: 100%;
+    max-height: 75%;
+}
+
+.element-information {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    margin-bottom: 0,5em;
+}
+
+.element-information .title {
+    font-weight: bold;
+} 
+                        
+.element-information .price {
+    text-align: right;
+    
+} 
+
+.element  button {
+    background-color: rgb(255, 255, 255);
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 3px;
+    margin-top: 0,5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
