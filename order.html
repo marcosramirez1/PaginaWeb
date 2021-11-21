@@ -18,34 +18,35 @@
         </nav>
     </header>
     <main>
-        <aside><img href= "logo1" class = "logo" src= alt="Bait Blanqueria"></aside>
-        <article>
-            <h1>Order</h1>
-           <div>
-            <img class = "imagen-sabanas" src="images/juego de toallon fantasia.jpg" alt="toallones">
-            <div class = "element-information">
-                <div class = "title">
-                  
-                </div>
-                <div class = "price">
-                    
-                </div>
-            </div>
-            
-           </div>
-                
-              
+        <aside><img href= "logo1" class = "logo" src= "images/logo.jpeg" alt="Bait Blanqueria"></aside>
 
-           
+        <article>
+            <h1>Pedido</h1>
+            <div class = "order-selected">
             
+                <img class = "imagen-sabanas"  alt="toallones">
+                <div class = "element-information">
+                    <div class = "title">
+                    
+                    </div>
+                    <div class = "price">
+                        
+                    </div>
+                </div>  
+            </div>
+        
             <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
                 <div class = "input-group">
-                    <div>
-                        <label for="first-name">First Name</label>
-                    </div>
-                </div>
-                <input type="text" name = "first-name" id ="first-name">
-                <div>
+                        Nombre: <input type="nombre" name = "nombre" required/>
+                        Apellido: <input type="apellido" name = "apellido" required/>
+                        Direccion: <input type="direccion" name = "direccion" required/>
+                        Provincia: <input type="provincia" name = "provincia" required/>
+                        Pais: <input type="pais" name = "pais" required/>
+                        Depto/Piso (Opcional): <input type="depto-piso" name = "depto-piso" />
+                        Mail: <input type="mail" name = "mail" required/>
+                        Telefono: <input type="telefono" name = "telefono" required/>
+                        Pedido: <input type="pedido" name = "pedido" required/>
+                    
                 </div>
                 <input type="reset" value = "Reset">
                 <input type="submit" value = "Order">
@@ -67,10 +68,10 @@
         const order = localStorage.getItem("order") 
         if(order) {
             const CatalogOrder = JSON.parse(order);
-            const orderSelected = document.querySelectorAll(".order-selected");
+            const orderSelected = document.querySelector(".order-selected");
             orderSelected.querySelector(".title").innerText = CatalogOrder.title;
             orderSelected.querySelector(".price").innerText = CatalogOrder.price;
-            const img = orderSelected.querySelector(".img");
+            const img = orderSelected.querySelector("img");
             img.setAttribute("src", `images/${CatalogOrder.id}.jpg`)
         }
     });

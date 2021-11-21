@@ -8,8 +8,9 @@ html, body {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: lightgray;
+    background-color: rgb(17, 118, 95, 0.986);
 }
+
 
 header {
     display: block;
@@ -17,13 +18,13 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: lightgoldenrodyellow;
+    background-color: rgba(17, 118, 95, 0.986);
     padding: 10px;
 }
 
 nav a:visited,
 nav a:link {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -64,7 +65,7 @@ article {
 
 @media only screen and (min-width: 768px) {
     main {
-        display: flex;
+      display: flex;
     }
 
     aside {
@@ -74,23 +75,27 @@ article {
 }
 
 .logo {
-    max-width: 40%;
-    max-height: 40%;
-}
+    border-radius: 50% 50% 50% 50%;
+    max-width: 50%;
+    display: inline-block; 
+    }
 
 .banner {
-    max-height: 150%;
+    max-height:70%;
     max-width: 100%;
+   
 }
 
 h1 
 {
-    font-size: 1,5em;
+    font-size: 2em;
     margin-top: 0,5em;
+    text-align: center;
+    background-color: rgb(17, 118, 95, 0.986);
 }
 .subtitle {
-    background-color: rgb(10, 119, 83);
-    font-size: 0,9em;
+    background-color: rgb(255, 255, 255);
+    font-size: 1,5em;
     padding: 1px;
     border: solid 0,2em black;
     margin-top: 0,9em;
@@ -98,23 +103,27 @@ h1
 
 /*catalogo */
 .element {
- width: 250px;
- padding: 10px;
- margin: 10px;
- background-color: darkgreen;
- border: solid 1px ;
-
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+    
+    background-color: rgb(17, 118, 95, 0.986);
+    border: solid 1px ;
+    display: inline-block;
+    color: white;
 }
 .imagen-sabanas {
     max-width: 100%;
-    max-height: 75%;
+    max-height: 70%;
 }
 
 .element-information {
     display: flex;
     max-width: 100%;
     justify-content: space-between;
-    margin-bottom: 0,5em;
+    margin-bottom: 0,2em;
+  
 }
 
 .element-information .title {
@@ -123,16 +132,83 @@ h1
                         
 .element-information .price {
     text-align: right;
-    
+    margin-left: 10px;
 } 
 
+.element p  {
+    margin-top: 5px;
+}
+
 .element  button {
-    background-color: rgb(255, 255, 255);
-    border: solid 1px rgb(255, 255, 255);
+    background-color: rgb(0, 255, 0);
+    border: solid 1px rgb(3, 3, 3);
     border-radius: 3px;
     margin-top: 0,5em;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 70px; 
+    height: 30px;
+    margin-top: 5px;
 }
 
+
+
+/*contacto*/
+.contact {
+    background-color: rgb(17, 118, 95, 0.986);
+    margin-top: 10px;
+    border: solid 1px black;
+    color: white;
+}
+.contact a {
+    color: rgb(0, 255, 0)
+}  
+
+.contact h1 {
+    text-align: left;
+    font-size: 2em;
+    margin-block-end: 5%;
+}
+.contact p {
+    font-size: 1.5em;
+}
+
+
+/*order*/ 
+.input-group {
+    width : 150px;
+    padding: 10px;
+    color: black;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+form {
+
+    width: 300px;
+    margin-top: 10px;
+    background-color: white;
+}
+@media only screen and(min-width: 768px) and (max-width: 940px) {
+    form {
+        width: 100px;
+        height: 100px;
+    }
+}
+input {
+    border: solid 1px black;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: rgb(158, 157, 157);  
+}
+.order-selected {
+    width: 250px;
+    padding: 10px;
+    background-color: rgb(17, 118, 95, 0.986);
+    border: solid 1px ;
+    color: white; 
+}
+.order-selected .price {
+    width: 30%;
+}
