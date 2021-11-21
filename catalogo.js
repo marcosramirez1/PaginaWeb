@@ -10,9 +10,9 @@ orderButton.forEach (item => {
             price: container.querySelector ('.price').innerText, 
             id: button.getAttribute("data-order")
         }
-        localStorage.setItem ("order", JSON.stringify(order)); 
-        const url = window.location.href.replace('catalogo.html','order.html');
-        window.location.href = url
+localStorage.setItem ("order", JSON.stringify(order)); 
+    const url = window.location.href.replace('catalogo.html','order.html');
+    window.location.href = url
 })
 })
 })

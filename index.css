@@ -185,10 +185,10 @@ h1
     box-sizing: border-box;
 }
 form {
-
+    display: inline-block;
     width: 300px;
     margin-top: 10px;
-    background-color: white;
+    background-color: rgb(17, 118, 95, 0.986);
 }
 @media only screen and(min-width: 768px) and (max-width: 940px) {
     form {
@@ -202,6 +202,15 @@ input {
     font-size: 1.2em;
     background-color: rgb(158, 157, 157);  
 }
+
+.input-group .direcc {
+ height: 40px;
+}
+.input-group {
+    font-weight: bold;
+    font-size: 1em;
+}
+
 .order-selected {
     width: 250px;
     padding: 10px;
